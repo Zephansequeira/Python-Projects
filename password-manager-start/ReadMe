@@ -1,0 +1,2 @@
+A simple project build using python-tkinker that allows users to type their credentials [ website name , password , username ] and store locally in a json file. 
+
