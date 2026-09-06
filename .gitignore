@@ -1,5 +1,0 @@
-# ignore all .txt files
-*.txt
-
-#ignore all .md files
-*.md
