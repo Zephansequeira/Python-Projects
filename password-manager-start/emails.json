@@ -1,0 +1,22 @@
+{
+    "amazon": {
+        "email": "bobthebuilder@gmail.com",
+        "password": "pd#&LjrmLM29Wb4+"
+    },
+    "flipcart": {
+        "email": "bobthebuilder@gmail.com",
+        "password": "#9u12d%mJdjfZ6u"
+    },
+    "doordash": {
+        "email": "bobthebuilder@gmail.com",
+        "password": "jojo@doordash"
+    },
+    "github": {
+        "email": "bobthebuilder@gmail.com",
+        "password": "bobthebuilder"
+    },
+    "zomato": {
+        "email": "bobthebuilder@gmail.com",
+        "password": "r9sYx(DdNx3O%"
+    }
+}
