@@ -1,0 +1,20 @@
+[
+  {
+    "location": "Mumbai,India",
+    "Temp": "27.7°C",
+    "Humidity": "78",
+    "Rain": "23"
+  },
+  {
+    "location": "London, UK",
+    "Temp": "17.2°C",
+    "Humidity": "69",
+    "Rain": "0"
+  },
+  {
+    "location": "New York, USA",
+    "Temp": "24.4°C",
+    "Humidity": "59",
+    "Rain": "25"
+  }
+]
