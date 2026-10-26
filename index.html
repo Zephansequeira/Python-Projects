@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Card</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #f3f7fb;
+        font-family: Arial, sans-serif;
+        color: #1f2937;
+      }
+
+      .weather-card {
+        width: 320px;
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 24px 22px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .temperature {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+        color: #111827;
+      }
+
+      .location {
+        font-size: 18px;
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 20px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+      }
+
+      .info-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        background: #f8fafc;
+        border-radius: 10px;
+      }
+
+      .label {
+        font-size: 14px;
+        color: #6b7280;
+      }
+
+      .value {
+        font-size: 16px;
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .check-btn {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+          opacity 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .check-btn:hover {
+        opacity: 0.95;
+        transform: translateY(-1px);
+      }
+      .check-btn:active {
+        transform: translateY(2px) scale(0.99);
+      }
+
+      /* .check-btn:active is when the btn is clicked.  */
+    </style>
+  </head>
+  <body>
+    <div class="weather-card">
+      <div class="temperature" id="temperature">28°C</div>
+      <div class="location" id="location">Bandra, India</div>
+
+      <div class="info">
+        <div class="info-item">
+          <span class="label">Humidity</span>
+          <span class="value" id="humidity">68%</span>
+        </div>
+
+        <div class="info-item">
+          <span class="label">Chances of rain</span>
+          <span class="value" id="rainChance">40%</span>
+        </div>
+      </div>
+
+      <button class="check-btn" id="checkWeatherBtn">Check Weather</button>
+    </div>
+    <script src="main.js"></script>
+    <!-- Always at end the script file, since first all tags above are read then the according changes are mde from js.
+     If its attached in the header, the data its calling won't exist yet . 
+     
+    -->
+  </body>
+</html>
